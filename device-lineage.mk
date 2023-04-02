@@ -23,7 +23,12 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # Face Unlock
+ifneq ($(wildcard vendor/google/faceunlock/device.mk),)
 -include vendor/google/faceunlock/device.mk
+else
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.biometrics.face.xml
+endif
 
 # PixelParts
 include packages/apps/PixelParts/device.mk
