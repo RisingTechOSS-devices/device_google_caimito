@@ -24,8 +24,8 @@ $(call inherit-product, device/google/caimito/komodo_generic.mk)
 
 PRODUCT_NAME := aosp_komodo
 PRODUCT_DEVICE := komodo
-PRODUCT_MODEL := AOSP on komodo
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 9 Pro XL
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
 
 DEVICE_MANIFEST_FILE := \

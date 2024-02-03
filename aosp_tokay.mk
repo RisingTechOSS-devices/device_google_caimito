@@ -24,8 +24,8 @@ $(call inherit-product, device/google/caimito/tokay_generic.mk)
 
 PRODUCT_NAME := aosp_tokay
 PRODUCT_DEVICE := tokay
-PRODUCT_MODEL := AOSP on tokay
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 9
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
 
 DEVICE_MANIFEST_FILE := \
