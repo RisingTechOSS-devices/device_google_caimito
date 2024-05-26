@@ -41,4 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Tensor G4" \
     RisingMaintainer="Lord Itachi|Niv"
 
-$(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
+ifneq ($(wildcard vendor/google_devices/komodo/proprietary/device-vendor.mk),)
+else
+  $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
+endif

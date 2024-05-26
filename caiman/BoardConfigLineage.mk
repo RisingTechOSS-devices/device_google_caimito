@@ -6,4 +6,7 @@
 
 include $(DEVICE_PATH)/BoardConfigLineage.mk
 
-include $(VENDOR_PATH)/BoardConfigVendor.mk
+ifneq ($(wildcard vendor/google_devices/caiman/proprietary/BoardConfigVendor.mk),)
+else
+  include $(VENDOR_PATH)/BoardConfigVendor.mk
+endif
