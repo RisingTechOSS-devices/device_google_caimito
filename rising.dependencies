@@ -7,5 +7,9 @@
     "repository": "device/google/caimito-kernels/6.1",
     "target_path": "device/google/caimito-kernels/6.1",
     "remote": "aosp-caimito"
+  },
+  {
+    "repository": "packages_apps_PixelParts",
+    "target_path": "packages/apps/PixelParts"
   }
 ]

@@ -30,6 +30,20 @@ WITH_GMS := true
 # Ship Google Camera
 TARGET_PREBUILT_GOOGLE_CAMERA := true
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# QuickTap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Inherit RisingOS configurations.
+RISING_MAINTAINER := Lord Itachi
+
+# Add Official Stuff
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Tensor G4" \
+    RisingMaintainer="Lord Itachi"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2424
 TARGET_SCREEN_WIDTH := 1080
