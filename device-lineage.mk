@@ -22,6 +22,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Iwlan
 
+# Face Unlock
+-include vendor/google/faceunlock/device.mk
+
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
