@@ -21,6 +21,12 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
+# Addons
+TARGET_HAS_UDFPS := true
+
+# Gms
+WITH_GMS := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2424
 TARGET_SCREEN_WIDTH := 1080
