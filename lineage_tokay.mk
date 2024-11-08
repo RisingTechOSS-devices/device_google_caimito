@@ -27,6 +27,9 @@ TARGET_HAS_UDFPS := true
 # Gms
 WITH_GMS := true
 
+# Ship Google Camera
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2424
 TARGET_SCREEN_WIDTH := 1080
