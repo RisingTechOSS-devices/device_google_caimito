@@ -22,4 +22,9 @@
     <dimen name="rounded_corner_radius">157px</dimen>
     <dimen name="rounded_corner_radius_top">157px</dimen>
     <dimen name="rounded_corner_radius_bottom">157px</dimen>
+
+    <!-- Statusbar -->
+    <dimen name="status_bar_padding_end">4.0dip</dimen>
+    <dimen name="status_bar_padding_start">4.0dip</dimen>
+    <dimen name="status_bar_clock_starting_padding">4.0dip</dimen>
 </resources>
