@@ -21,22 +21,24 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
-# Addons
-TARGET_HAS_UDFPS := true
-
-# Gms
-WITH_GMS := true
-
-# Ship Google Camera
-TARGET_PREBUILT_GOOGLE_CAMERA := true
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2856
 TARGET_SCREEN_WIDTH := 1280
 
+# RisingOS
+RISING_MAINTAINER=Niv
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="caiman-user 15 AP4A.250105.002 12701944 release-keys" \
     BuildFingerprint=google/caiman/caiman:15/AP4A.250105.002/12701944:user/release-keys \
-    DeviceProduct=$(DEVICE_CODENAME)
+    DeviceProduct=$(DEVICE_CODENAME) \
+    RisingChipset="Tensor G4" \
+    RisingMaintainer="Niv"
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)

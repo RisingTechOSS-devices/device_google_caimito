@@ -21,28 +21,14 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
-# Addons
-TARGET_HAS_UDFPS := true
-
-# Gms
-WITH_GMS := true
-
-# Ship Google Camera
-TARGET_PREBUILT_GOOGLE_CAMERA := true
-
-# Blur
+# RisingOS
+RISING_MAINTAINER="Lord Itachi"
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 TARGET_ENABLE_BLUR := true
-
-# QuickTap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Inherit RisingOS configurations.
-RISING_MAINTAINER := Lord Itachi
-
-# Add Official Stuff
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Tensor G4" \
-    RisingMaintainer="Lord Itachi"
+TARGET_HAS_UDFPS := true
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2424
@@ -51,6 +37,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="tokay-user 15 AP4A.250105.002 12701944 release-keys" \
     BuildFingerprint=google/tokay/tokay:15/AP4A.250105.002/12701944:user/release-keys \
-    DeviceProduct=$(DEVICE_CODENAME)
+    DeviceProduct=$(DEVICE_CODENAME) \
+    RisingChipset="Tensor G4" \
+    RisingMaintainer="Lord Itachi"
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
