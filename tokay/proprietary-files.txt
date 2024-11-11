@@ -36,6 +36,9 @@ product/etc/permissions/com.google.android.hardwareinfo.xml
 product/framework/libhwinfo.jar
 product/priv-app/HardwareInfo/HardwareInfo.apk;PRESIGNED
 
+# FaceEnroll
+system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk
+
 # Hotword
 product/priv-app/HotwordEnrollmentOKGoogleFUSIONPro/HotwordEnrollmentOKGoogleFUSIONPro.apk;PRESIGNED
 product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIONPro.apk;PRESIGNED

@@ -144,6 +144,9 @@ system_ext/lib64/com.google.edgetpu_app_service-V4-ndk.so
 system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 system_ext/lib64/libedgetpu_dba.google.so
 
+# FaceEnroll
+system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk
+
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
